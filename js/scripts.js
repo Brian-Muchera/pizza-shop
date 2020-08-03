@@ -1,4 +1,4 @@
-//user interface
+/user interface
 var totalCosts = [];
 
 function order(size, crust, vegTopping, nonVegTopping) {
@@ -87,6 +87,13 @@ order.prototype.totalCost = function() {
         alert("Thank you for Your Purchase!Your order will be delivered to your location within 12hrs at the time of purchase! 🍕 🚚")
 
     });
+
+    $(".picha").click(function() {
+
+        $(".jaza").fadeToggle("slow");
+
+    });
+
 
     function validate() {
         var name = document.getElementById("name").value;

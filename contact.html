@@ -6,16 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>pizza-inn</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/jquery-3.5.1.js"></script>
-    <script src="js/scripts.js"></script>
 
 </head>
 
 <body class="container">
     <div class="overlay">
-        <div class="clap">
+        <div class="deliver">
             <nav class="greatnav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -27,17 +25,40 @@
                 </ul>
             </nav>
             <div class="logo">
-                <img src="images/logoo.jpg" alt="logo" width="150" height="120" id="log1">
+                <img src="css/images/logo.jpeg" alt="logo" width="150" height="120" id="log1">
+
                 <h1>Tasty Pizza</h1>
-                <p id="state">We give you the sweetness that you deserve!</p>
+                <p id="state">We give you what you want</p>
             </div>
         </div>
-        <div class="histo">
-            <h2>History</h2>
-            <p>This is a business started few years ago and now it has numerous branches all over kenya.</p>
-            <p>The business has experienced some shortcomings but due to loyalty from customers we are still standing.</p>
-       
-            <footer>
+        
+        <div class="contact">
+
+            <h2>Talk to us</h2>
+            <p>Give us your feedback.We will appreciate!click on the logo below to give us your feedback!.</p>
+
+            <div class="picha">
+                <img src="images/click.png" alt="" width="150" id="smart">
+            </div>
+
+            <form action="">
+                <div class="jaza">
+                    <div class="form-group">
+                        <h3>Please fill in the following form</h3>
+                        <br><br>
+                        <input type="text" value="" id="name" placeholder="Name..">
+                        <br><br>
+                        <input type="email" value="" id="email" placeholder="email..">
+                        <br><br>
+                    </div>
+                    <textarea name="" id="text" cols="30" rows="10" placeholder="write your message.."></textarea>
+                    <br><br>
+                    <button type="submit" class="btn btn" onclick="validate()">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <footer>
             <p>For reservations or order, call +254704435621</p>
             <p>Email: mucherabrian2@gmail.com</p>
 
@@ -54,4 +75,4 @@
     <script src="js/scripts.js"></script>
 </body>
 
-</html>    
+</html>

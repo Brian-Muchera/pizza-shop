@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>pizza-inn</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/scripts.js"></script>
+
+</head>
+
+<body class="container">
+    <div class="overlay">
+        <div class="clap">
+            <nav class="greatnav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+
+                    <li> <a href="menu.html"> Our Menu</a></li>
+
+                    <li> <a href="contact.html">Contact Us</a></li>
+
+                </ul>
+            </nav>
+            <div class="logo">
+                <img src="images/logoo.jpg" alt="logo" width="150" height="120" id="log1">
+                <h1>Tasty Pizza</h1>
+                <p id="state">We give you the sweetness that you deserve!</p>
+            </div>
+        </div>
+
+        <div class="menu">
+            <h2>Menu</h2>
+
+            <p>What we offer is very good and we have no doubt that you will like it,below are some of our special pizzas and their prices </p>
+
+
+            <div class="row pass">
+                <div class="col-md-4">
+                    <img src="images/bacon topping.jpg" alt="" width="250" height="250" id="piz1">
+                    <p id="par1">Large size pizza with bacon toppings</p>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="./images/sausage pizza.png"  alt="" width="250" height="250" id="piz2">
+                    <p id="par2">Large pizza with tomato toppings spiced with black-berrys</p>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="images/blue-cheese-pizza-with.jpg" alt="" width="250" height="250" id="piz3">
+                    <p id="par3">Large pizza with sausage toppings with extra cheese</p>
+                </div>
+
+            </div>
+            <div class="row fail">
+                <div class="col-md-4">
+                    <img src="images/tomato toppings.png" alt="" width="250" height="250" id="piz4">
+                    <p id="par4">Extra cheese with tomato toppings large pizza</p>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="images/mushroom toppings.jpg" alt="" width="250" height="250" id="piz5">
+                    <p id="par5">Large pizza with mushroom toppings</p>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="images/mushroom and tomato.jpg" alt="" width="250" height="250" id="piz6">
+                    <p id="par6">Large pizza with a combination of mushroom and tomato toppings</p>
+                </div>
+
+            </div>
+
+            <div class="order">
+                <h2>Make Your Order Now</h2>
+            </div>
+
+                <form id="charge">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="">Pizza Size</label>
+                            <br>
+                            <select name="" id="piz">
+                        
+                        <option value="Size">SELECT PIZZA</option>
+                        <option value="Small">Small Ksh.500</option>
+                        <option value="Medium">Medium Ksh. 700</option>
+                        <option value="Large">Large Ksh. 900</option>
+
+                    </select>
+                        </div>
+                        <br><br>
+
+                        <div class="col-md-4">
+                            <label for="">Toppings</label>
+                            <br>
+                            <select name="" id="topveg">
+
+                            <option value="">VEG</option>
+                            <option value="Mushrooms">Mushrooms ksh. 400</option>
+                            <option value="Onions">Onions ksh. 500</option>
+                            <option value="Capsicum">Capsicum ksh.600</option>
+                            
+                        </select>
+
+                            <select name="" id="topnoveg">
+                                
+                            <option value="">NON VEG</option>
+                            <option value="Chicken">Chicken ksh. 500</option>
+                            <option value="Sausage">Sausage ksh. 400</option>
+                            <option value="Bacon">Bacon ksh. 600</option>
+                        </select>
+                        </div>
+
+                        <br><br>
+
+                        <div class="col-md-4">
+
+                            <label for="">Crust</label>
+                            <br>
+
+                            <select name="Crust" id="crus">
+
+                            <option value="Crust">CRUST</option>
+                            <option value="Crispy">Crispy ksh. 200</option>
+                            <option value="Stuffed">Stuffed ksh. 200</option>
+                            <option value="Gluten-free">Gluten free ksh. 100</option>
+
+                        </select>
+                        </div>
+                    </div>
+                    <br><br>
+
+                    <input type="submit" class="btn  btn-rounded waves-effect btn-lg" value="Order!!" id="order1">
+                </form>
+
+
+            </div>
+        </div>
+        <div class="over">
+            <h3>Receipt</h3>
+            <p id="sz">Pizza size:</p>
+            <p id="vgs">Veges:</p>
+            <p id="nvgs">Non-veges:</p>
+            <p id="cr">Crust:</p>
+            <p id="tc">Total charges:</p>
+        </div>
+        <br><br>
+
+        <div class="order2">
+            <input type="submit" class="btn  btn-rounded waves-effect btn-lg" value="Delivery??" id="order2">
+        </div>
+       
+
+        <footer>
+            <p>For reservations or order, call +254704435621</p>
+            <p>Email: mucherabrian2@gmail.com</p>
+
+            <a href="https://www.facebook.com"><img src="images/fb.jpg" alt="fb" width="50" height="50" id="img8"></a>
+            <a href="https://twitter.com/home"><img src="images/twitter_PNG3.png" alt="tw" width="50" height="50" id="img9"></a>
+            <a href="https://www.youtube.com/watch?v=f9Slq2ck7xQ"><img src="images/pngtree-youtube-logo-icon-png-image_3560543.jpg" 
+                alt="yt" width="50" height="50" id="img10"></a>
+            <p>All rights reserved &#169 Brian 2020</p>
+
+        </footer>
+
+    </div>
+    </div>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
