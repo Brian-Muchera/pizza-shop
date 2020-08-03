@@ -87,3 +87,10 @@ order.prototype.totalCost = function() {
         alert("Thank you for Your Purchase!Your order will be delivered to your location within 12hrs at the time of purchase! 🍕 🚚")
 
     });
+
+    function validate() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var text = document.getElementById("text").value;
+    
+    
