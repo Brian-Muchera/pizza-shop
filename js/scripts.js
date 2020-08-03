@@ -101,6 +101,9 @@ order.prototype.totalCost = function() {
 
             alert("Please write a message!");
     
-        } else {
-    
-         
+        } else { 
+            
+            alert("We have received  your message dear " + name + ", " + " thank you for interacting with us!Come Again!!");
+    };
+
+}
