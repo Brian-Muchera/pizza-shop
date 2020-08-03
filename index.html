@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pizza shop</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>pizza-inn</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+
 </head>
+
 <body class="container">
     <div class="overlay">
-        <div class="deliver">
+        <div class="clap">
             <nav class="greatnav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -19,35 +23,153 @@
                     <li> <a href="contact.html">Contact Us</a></li>
 
                 </ul>
-            </nav> 
+            </nav>
             <div class="logo">
-                <img src="images/logoo.jpg" alt="logo" width="150px" height="120px" id="log1">
-                <h1>Tasty Pizza</h1>
-                <p id="state">We give you the sweetness that you want!</p>
+                <img src="css/images/logo.jpeg" alt="logo" width="150" height="120" id="log1">
+
+                <h1>Sweet Pizza</h1>
+                <p id="state">We give you what you want</p>
             </div>
         </div>
-        <div class="contact">
-        <h2>Talk to us</h2>
-           <p>We appreciate your feedback.Fill the form below to rate us.We will appreciate a lot!click the logo below!</p>
-           <div class="picha">
-           <img src="images/click.png" alt="click" width="150" id="smart">
-           </div>
-           <form action="">
-            <div class="jaza">
-                <div class="form-group">
-                    <h3>Please fill in the following form</h3>
-                    <br><br>
-                    <input type="text" value="" id="name" placeholder="Name..">
-                    <br><br>
-                    <input type="email" value="" id="email" placeholder="email..">
-                    <br><br>
-                </div>
-                <textarea name="" id="text" cols="30" rows="10" placeholder="write your message.."></textarea>
-                <br><br>
-                <button type="submit" class="btn btn" onclick="validate()">Submit</button>
-            </div>
-        </form>
-    </div>
 
-            </body>
+        <div class="menu">
+            <h2>Menu</h2>
+
+            <p>What we offer is very special and I know you will like it, below are some of our special pizzas and their prices </p>
+
+
+            <div class="row pass">
+                <div class="col-md-4">
+                    <img src="css/images/seafood1.jpg" alt="" width="250" height="250" id="piz1">
+                    <p id="par1">Large size pizza with bacon toppings</p>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="css/images/Vegan-Sausage-Pizza.jpg" alt="" width="250" height="250" id="piz2">
+                    <p id="par2">Large pizza with tomato toppings spiced with black-berrys</p>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="css/images/pizza3.jpeg" alt="" width="250" height="250" id="piz3">
+                    <p id="par3">Large pizza with sausage toppings with extra cheese</p>
+                </div>
+
+            </div>
+            <div class="row fail">
+                <div class="col-md-4">
+                    <img src="css/images/pizza4.jpg" alt="" width="250" height="250" id="piz4">
+                    <p id="par4">Extra cheese with tomato toppings large pizza</p>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="css/images/pizza5.jpg" alt="" width="250" height="250" id="piz5">
+                    <p id="par5">Large pizza with mushroom toppings</p>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="css/images/pizza6.jpg" alt="" width="250" height="250" id="piz6">
+                    <p id="par6">Large pizza with a combination of mushroom and tomato toppings</p>
+                </div>
+
+            </div>
+
+            <div class="order">
+                <h2>Make Your Order Now</h2>
+
+                <form id="charge">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="">Pizza Size</label>
+                            <br>
+                            <select name="" id="piz">
+                        
+                        <option value="Size">SELECT PIZZA</option>
+                        <option value="Small">Small Ksh.500</option>
+                        <option value="Medium">Medium Ksh. 700</option>
+                        <option value="Large">Large Ksh. 900</option>
+
+                    </select>
+                        </div>
+                        <br><br>
+
+                        <div class="col-md-4">
+                            <label for="">Toppings</label>
+                            <br>
+                            <select name="" id="topveg">
+
+                            <option value="">VEG</option>
+                            <option value="Mushrooms">Mushrooms ksh. 300</option>
+                            <option value="Onions">Onions ksh. 400</option>
+                            <option value="Capsicum">Capsicum ksh.500</option>
+                            
+                        </select>
+
+                            <select name="" id="topnoveg">
+                                
+                            <option value="">NON VEG</option>
+                            <option value="Chicken">Chicken ksh. 400</option>
+                            <option value="Sausage">Sausage ksh. 300</option>
+                            <option value="Bacon">Bacon ksh. 500</option>
+                        </select>
+                        </div>
+
+                        <br><br>
+
+                        <div class="col-md-4">
+
+                            <label for="">Crust</label>
+                            <br>
+
+                            <select name="Crust" id="crus">
+
+                            <option value="Crust">CRUST</option>
+                            <option value="Crispy">Crispy ksh. 100</option>
+                            <option value="Stuffed">Stuffed ksh. 100</option>
+                            <option value="Gluten-free">Gluten free ksh. 50</option>
+
+                        </select>
+                        </div>
+                    </div>
+                    <br><br>
+
+                    <input type="submit" class="btn  btn-rounded waves-effect btn-lg" value="Order!!" id="order1">
+                </form>
+
+
+            </div>
+        </div>
+        <div class="over">
+            <h3>Receipt</h3>
+            <p id="sz">Pizza size:</p>
+            <p id="vgs">Veges:</p>
+            <p id="nvgs">Non-veges:</p>
+            <p id="cr">Crust:</p>
+            <p id="tc">Total charges:</p>
+        </div>
+        <br><br>
+
+        <div class="order2">
+            <input type="submit" class="btn  btn-rounded waves-effect btn-lg" value="Delivery??" id="order2">
+        </div>
+
+
+        <footer>
+            <p>For reservations or order, call +254704435621</p>
+            <p>Email: mucherabrian2@gmail.com</p>
+
+            <a href="https://www.facebook.com"><img src="css/images/facebook.png" alt="fb" id="img8"></a>
+            <a href="https://twitter.com/home"><img src="css/images/twitter.png" alt="tw" id="img9"></a>
+            <a href="https://www.youtube.com/watch?v=f9Slq2ck7xQ"><img src="css/images/you_tube.png" alt="yt" id="img10"></a>
+
+            <p>All rights reserved &#169 Brian 2020</p>
+
+
+        </footer>
+
+    </div>
+    </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
 </html>
