@@ -93,4 +93,6 @@ order.prototype.totalCost = function() {
         var email = document.getElementById("email").value;
         var text = document.getElementById("text").value;
     
-    
+        if (name === "") {
+            alert("Please write your name!");
+         
