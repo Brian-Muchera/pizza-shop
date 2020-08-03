@@ -94,5 +94,5 @@ order.prototype.totalCost = function() {
         var text = document.getElementById("text").value;
     
         if (name === "") {
-            alert("Please write your name!");
+            alert("Please write your name correctly!!!");
          
