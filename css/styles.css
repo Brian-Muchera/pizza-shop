@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Philosopher:wght@400;700&display=swap');
+
 body {
-    color:black;
+    color: black;
   }
   
   .container {
@@ -8,7 +11,7 @@ body {
     bottom: 0 !important;
     right: 0 !important;
     left: 0 !important;
-    background-color: blueviolet !important;
+    background-color: rgb(141, 141, 151) !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     width: 100%;
@@ -30,7 +33,7 @@ body {
   h1 {
     font-weight: bolder;
     font-style: italic;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    font-family: 'Oleo Script', cursive;
     padding-top: 10px;
     color:brown;
     text-shadow: 0 0 10px black;
@@ -108,8 +111,9 @@ body {
     padding-bottom: 50px;
     padding-top: 50px;
     text-shadow: 0 0 2px rgba(17, 22, 97, 0.753);
+    font-family: 'Philosopher', sans-serif;
   }
-  #piz1,
+#piz1,
 #piz2,
 #piz3,
 #piz4,
@@ -117,6 +121,16 @@ body {
 #piz6 {
   border-radius: 50%;
   box-shadow: 0 0 10px black;
+}
+#piz1:hover,
+#piz2:hover,
+#piz3:hover,
+#piz4:hover,
+#piz5:hover,
+#piz6:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 
@@ -133,4 +147,17 @@ body {
   .order2 {
     text-align: center;
   }
+  .over {
+    border: 1px solid black;
+    padding: 20px 20px 20px 20px;
+    box-shadow: 0 0 15px blueviolet;
+  }
   
+  h3 {
+    text-align: center;
+    font-family: 'Oleo Script', cursive;
+
+  }
+  .order{
+    font-family: 'Oleo Script', cursive;
+  }
