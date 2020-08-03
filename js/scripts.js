@@ -1,4 +1,4 @@
-/user interface
+//user interface
 var totalCosts = [];
 
 function order(size, crust, vegTopping, nonVegTopping) {
@@ -22,28 +22,30 @@ order.prototype.cost = function() {
     } else if (this.size === pizzaSize[2]) {
         this.price += 900;
     }
+
     if (this.crust === pizzaCrust[0]) {
-        this.price += 200;
-    } else if (this.crust === pizzaCrust[1]) {
-        this.price += 200;
-    } else if (this.crust === pizzaCrust[2]) {
         this.price += 100;
+    } else if (this.crust === pizzaCrust[1]) {
+        this.price += 100;
+    } else if (this.crust === pizzaCrust[2]) {
+        this.price += 50;
     }
+
     if (this.nonVegTopping === pizzaNonVegTopping[0]) {
-        this.price += 500;
+        this.price += 300;
     } else if (this.nonVegTopping === pizzaNonVegTopping[1]) {
-        this.price += 400;
+        this.price += 300;
     } else if (this.nonVegTopping === pizzaNonVegTopping[2]) {
-        this.price += 600;
+        this.price += 300;
     }
 
 
     if (this.vegTopping === pizzaVegTopping[0]) {
-        this.price += 400;
+        this.price += 200;
     } else if (this.vegTopping === pizzaVegTopping[1]) {
-        this.price += 500;
+        this.price += 200;
     } else if (this.vegTopping === pizzaVegTopping[2]) {
-        this.price += 600;
+        this.price += 200;
     }
 
     return this.price;
@@ -58,7 +60,8 @@ order.prototype.totalCost = function() {
     return orderTotal;
 }
 
-  $(document).ready(function() {
+
+$(document).ready(function() {
     $("input#order1").click(function(event) {
         event.preventDefault();
         var sizes = $("select#piz").val();
@@ -79,14 +82,16 @@ order.prototype.totalCost = function() {
 
 
     });
+
     $("#order2").click(function() {
-        prompt("Please insert you name!!")
-        prompt("Please insert you location!!")
-        prompt("Please insert your addrress!!")
-        alert("You will be charged an extra 400  for delivery and charges may change depending on where you live")
-        alert("Thank you for Your Purchase!Your order will be delivered to your location within 12hrs at the time of purchase! 🍕 🚚")
+        prompt("Please insert you name")
+        prompt("Please insert you location")
+        prompt("Please insert your address")
+        alert("You will be charged an extra 200  for delivery and the cost may change depending on how far you live!")
+        alert("Thank you for Your Purchase!Your order will be delivered to your location!!Come back again please!!")
 
     });
+
 
     $(".picha").click(function() {
 
@@ -95,22 +100,52 @@ order.prototype.totalCost = function() {
     });
 
 
-    function validate() {
-        var name = document.getElementById("name").value;
-        var email = document.getElementById("email").value;
-        var text = document.getElementById("text").value;
-    
-        if (name === "") {
-            alert("Please write your name correctly!!!");
-        } else if (email === "") {
-            alert("Please write your email appropriately!!!");
-        } else if (text === "") {
+    $(".eve1").hover(function() {
+        $(".para").slideToggle(1000);
+        $("#img1").slideToggle(1000);
+        $(".para").show();
+    });
+    $(".eve2").hover(function() {
+        $(".para1").slideToggle(1000);
+        $("#img2").slideToggle(1000);
+        $(".para1").show();
+    });
+    $(".eve3").hover(function() {
+        $(".para2").slideToggle(1000);
+        $("#img3").slideToggle(1000);
+        $(".para2").show();
+    });
 
-            alert("Please write a message!");
-    
-        } else { 
-            
-            alert("We have received  your message dear " + name + ", " + " thank you for interacting with us!Come Again!!");
+
+     $(".eve4").hover(function() {
+        $(".para3").slideToggle(1000);
+        $("#img4").slideToggle(1000);
+        $(".para3").show();
+
+    });
+})
+
+
+function validate() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var text = document.getElementById("text").value;
+
+
+
+    if (name === "") {
+        alert("Please write your name!");
+
+    } else if (email === "") {
+        alert("Please write your email!");
+
+    } else if (text === "") {
+
+        alert("Please write a message");
+
+    } else {
+
+        alert("We have received  your message dear " + name + ", " + " come back again Bon appetite!!");
     };
 
 }
