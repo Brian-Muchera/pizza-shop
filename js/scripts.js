@@ -82,8 +82,8 @@ order.prototype.totalCost = function() {
     $("#order2").click(function() {
         prompt("Please insert you name!!")
         prompt("Please insert you location!!")
-        prompt("Please insert your addrress")
+        prompt("Please insert your addrress!!")
         alert("You will be charged an extra 400  for delivery and charges may change depending on where you live")
-        alert("Thank you for Your Purchase!Your order will be delivered to your location 🍕 🚚")
+        alert("Thank you for Your Purchase!Your order will be delivered to your location within 12hrs at the time of purchase! 🍕 🚚")
 
     });
