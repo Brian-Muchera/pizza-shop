@@ -135,8 +135,8 @@ body {
 
 
 #order1 {
-    background-color: black !important;
-    box-shadow: 0 0 10px black;
+    background-color: blue !important;
+    box-shadow: 0 0 10px whitesmoke;
   }
   
   #order2 {
