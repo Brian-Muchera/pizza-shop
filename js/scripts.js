@@ -30,18 +30,30 @@ order.prototype.cost = function() {
         this.price += 100;
     }
     if (this.nonVegTopping === pizzaNonVegTopping[0]) {
-        this.price += 300;
+        this.price += 500;
     } else if (this.nonVegTopping === pizzaNonVegTopping[1]) {
-        this.price += 300;
+        this.price += 400;
     } else if (this.nonVegTopping === pizzaNonVegTopping[2]) {
-        this.price += 300;
+        this.price += 600;
     }
 
 
     if (this.vegTopping === pizzaVegTopping[0]) {
-        this.price += 200;
+        this.price += 400;
     } else if (this.vegTopping === pizzaVegTopping[1]) {
-        this.price += 200;
+        this.price += 500;
     } else if (this.vegTopping === pizzaVegTopping[2]) {
-        this.price += 200;
+        this.price += 600;
     }
+
+    return this.price;
+}
+
+
+order.prototype.totalCost = function() {
+    var orderTotal = 0;
+    for (var order = 0; order < totalCosts.length; order++) {
+        orderTotal += totalCosts[order];
+    }
+    return orderTotal;
+}
