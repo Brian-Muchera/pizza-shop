@@ -57,3 +57,25 @@ order.prototype.totalCost = function() {
     }
     return orderTotal;
 }
+
+  $(document).ready(function() {
+    $("input#order1").click(function(event) {
+        event.preventDefault();
+        var sizes = $("select#piz").val();
+        var crusts = $("select#crus").val();
+        var noVegToppings = $("select#topnoveg").val();
+        var vegToppings = $("select#topveg").val();
+
+        var newPizzaOrder = new order(sizes, crusts, noVegToppings, vegToppings);
+        newPizzaOrder.cost();
+        totalCosts.push(newPizzaOrder.price);
+
+
+        $("#sz").text(sizes);
+        $("#cr").text(crusts);
+        $("#nvgs").text(noVegToppings);
+        $("#vgs").text(vegToppings);
+        $("#tc").text(newPizzaOrder.totalCost());
+
+
+    });
