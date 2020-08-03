@@ -95,4 +95,7 @@ order.prototype.totalCost = function() {
     
         if (name === "") {
             alert("Please write your name correctly!!!");
+        } else if (email === "") {
+            alert("Please write your email appropriately!!!");
+    
          
